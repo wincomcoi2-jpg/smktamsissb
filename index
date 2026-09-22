@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="id"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260922-05-b4f7588","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Sekolah</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #123047;
+      --blue: #1877b8;
+      --sky: #e7f4fb;
+      --cream: #f7f3e9;
+      --ink: #183042;
+      --muted: #607080;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      width: 100%;
+      margin: 0;
+      font-family: "DM Sans", sans-serif;
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    .school-heading { font-family: "Fraunces", serif; }
+    .hero-photo { min-height: 500px; }
+    .hero-shade {
+      background: linear-gradient(90deg, rgba(10, 35, 54, .91) 0%, rgba(10, 35, 54, .72) 48%, rgba(10, 35, 54, .18) 100%);
+    }
+    .nav-link {
+      color: #365469;
+      transition: color .2s ease;
+    }
+    .nav-link:hover, .nav-link:focus { color: #1877b8; }
+    .lift-card {
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .lift-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(22, 57, 78, .12);
+    }
+    .reveal {
+      animation: rise .7s both;
+    }
+    .delay-1 { animation-delay: .12s; }
+    .delay-2 { animation-delay: .24s; }
+    .delay-3 { animation-delay: .36s; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .focus-ring:focus-visible {
+      outline: 3px solid #f3bd4d;
+      outline-offset: 3px;
+    }
+    .mission-list li {
+      position: relative;
+      padding-left: 1.85rem;
+    }
+    .mission-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: .05rem;
+      display: grid;
+      width: 1.25rem;
+      height: 1.25rem;
+      place-items: center;
+      border-radius: 9999px;
+      background: #dff4e6;
+      color: #23784b;
+      font-size: .8rem;
+      font-weight: 700;
+    }
+    @media (max-width: 767px) {
+      .hero-photo { min-height: 580px; }
+      .hero-shade { background: linear-gradient(180deg, rgba(10, 35, 54, .90), rgba(10, 35, 54, .58)); }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/d80647b37084f0c6.editing_sdk.js" type="text/javascript" integrity="sha512-jCz+DtquKRDjnSrSxfhBCzqv2CNRnUAa0936TKD2DSOtf6OZkZ6z2RJ9PZqOhkoYVUsdKS+mJI9DS8ttXywBzw=="></script>
+  <script src="/_sdk/765e1fea0cec97ce.resizing_sdk.js" type="text/javascript" integrity="sha512-IRTJnqww0+HQ5V/LlWEQrlD5SrYHaVvaeVoNe8HYQXoaguzUGheSd9+n9s6WOgaTcEH0g37DuINHZ9aqfzWjlw=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full" style="background: rgb(247, 243, 233);">
+  <header data-template-id="site-header" class="canva-header sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur" style="background: rgb(255, 255, 255);">
+   <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+    <a href="#beranda" class="flex items-center gap-3 focus-ring rounded-lg">
+     <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#1877b8] text-white">
+      <i data-lucide="graduation-cap" width="24" height="24"></i>
+     </div>
+     <div>
+      <p data-template-id="school-name" class="canva-text font-bold leading-tight" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 16px;">SMK  TAMANSISWA SUNGAI BUAH PALEMBANG</p>
+      <p data-template-id="school-tagline" class="canva-text text-xs" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Berilmu • Berkarakter • Berprestasi</p>
+     </div></a>
+    <nav aria-label="Navigasi utama" class="hidden items-center gap-6 text-sm font-semibold lg:flex">
+     <a data-template-id="nav-home" class="canva-link nav-link focus-ring rounded" href="#beranda" style="color: rgb(54, 84, 105); font-weight: 600; font-style: normal; font-size: 16px;">Beranda</a> <a data-template-id="nav-profile" class="canva-link nav-link focus-ring rounded" href="#profil" style="color: rgb(54, 84, 105); font-weight: 600; font-style: normal; font-size: 16px;">Profil</a> <a data-template-id="nav-program" class="canva-link nav-link focus-ring rounded" href="#program" style="color: rgb(54, 84, 105); font-weight: 600; font-style: normal; font-size: 16px;">Program</a> <a data-template-id="nav-facility" class="canva-link nav-link focus-ring rounded" href="#fasilitas" style="color: rgb(54, 84, 105); font-weight: 600; font-style: normal; font-size: 16px;">Fasilitas</a> <a data-template-id="nav-teacher" class="canva-link nav-link focus-ring rounded" href="#guru" style="color: rgb(54, 84, 105); font-weight: 600; font-style: normal; font-size: 16px;">Guru</a> <a data-template-id="nav-contact" class="canva-link nav-link focus-ring rounded" href="#kontak" style="color: rgb(54, 84, 105); font-weight: 600; font-style: normal; font-size: 16px;">Kontak</a>
+    </nav><a data-template-id="header-contact-button" href="#kontak" class="canva-button focus-ring rounded-full px-5 py-2.5 text-sm font-bold" style="background: rgb(24, 119, 184); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Hubungi Kami</a>
+   </div>
+  </header>
+  <main>
+   <section id="beranda" class="relative hero-photo overflow-hidden">
+    <img data-template-id="hero-image" loading="lazy" class="canva-image absolute inset-0 h-full w-full object-cover" src="https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Elegant university building with garden courtyard in Rabat, Morocco under clear blue sky.">
+    <div class="hero-shade absolute inset-0"></div>
+    <div class="relative mx-auto flex min-h-[500px] max-w-7xl items-center px-5 py-20 lg:px-8">
+     <div class="max-w-2xl text-white">
+      <p data-template-id="hero-kicker" class="canva-text reveal mb-5 text-sm font-bold uppercase tracking-[0.18em]" style="color: rgb(243, 189, 77); font-weight: 700; font-style: normal; font-size: 16px;">Membentuk Generasi Masa Depan</p>
+      <h1 data-template-id="hero-title" class="canva-text school-heading reveal delay-1 mb-6 font-bold leading-tight" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">Belajar Bertumbuh, Menginspirasi Dunia</h1>
+      <p data-template-id="hero-description" class="canva-text reveal delay-2 mb-9 max-w-xl text-lg leading-relaxed" style="color: rgb(237, 247, 251); font-weight: 400; font-style: normal; font-size: 16px;">Ruang belajar yang hangat, aktif, dan penuh peluang untuk setiap siswa menemukan potensi terbaiknya.</p><a data-template-id="hero-button" href="#profil" class="canva-button focus-ring reveal delay-3 inline-flex rounded-full px-7 py-3.5 font-bold shadow-lg" style="background: rgb(243, 189, 77); color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 16px;">Kenali Sekolah Kami</a>
+     </div>
+    </div>
+   </section>
+   <section id="profil" data-template-id="profile-section" class="canva-section w-full py-20" style="background: rgb(247, 243, 233);">
+    <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8">
+     <div class="relative">
+      <img data-template-id="about-image" loading="lazy" class="canva-image h-[410px] w-full rounded-[2rem] object-cover shadow-xl" src="canva://MAGuJ3CH2TA/1" alt="Teacher explaining geometry as students engage in a modern classroom setting.">
+      <div data-template-id="profile-badge" class="canva-banner absolute -bottom-5 -right-2 max-w-[220px] rounded-2xl p-5 shadow-xl sm:right-7" style="background: rgb(24, 119, 184);">
+       <p data-template-id="profile-badge-number" class="canva-text school-heading text-3xl font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">25+ Tahun</p>
+       <p data-template-id="profile-badge-text" class="canva-text mt-1 text-sm leading-snug" style="color: rgb(231, 244, 251); font-weight: 400; font-style: normal; font-size: 16px;">Mendampingi perjalanan belajar siswa.</p>
+      </div>
+     </div>
+     <div>
+      <p data-template-id="profile-kicker" class="canva-text mb-3 text-sm font-bold uppercase tracking-[0.16em]" style="color: rgb(24, 119, 184); font-weight: 700; font-style: normal; font-size: 16px;">Tentang Kami</p>
+      <h2 data-template-id="profile-title" class="canva-text school-heading mb-5 font-bold leading-tight" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 24px;">Sekolah yang tumbuh bersama setiap mimpi</h2>
+      <p data-template-id="profile-description" class="canva-text mb-7 leading-relaxed" style="color: rgb(76, 98, 113); font-weight: 400; font-style: normal; font-size: 16px;">SMK Tamansiswa Sungai Buah  adalah komunitas belajar yang mendorong rasa ingin tahu, keberanian mencoba, dan kepedulian terhadap sesama melalui pengalaman belajar yang relevan.</p>
+      <div class="grid gap-4 sm:grid-cols-2">
+       <article data-template-id="vision-card" class="canva-card rounded-2xl p-5" style="background: rgb(255, 255, 255);">
+        <div class="mb-3 text-[#1877b8]"><i data-lucide="eye" width="24" height="24"></i>
+        </div>
+        <h3 data-template-id="vision-title" class="canva-text mb-2 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Visi</h3>
+        <p data-template-id="vision-text" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">"Menghasilkan Tenaga Kerja yang beriman, bertaqwa, berahlak mulia, Profesional  dibidang Industri Otomotif dan Informasi serta Teknologi"</p>
+       </article>
+       <article data-template-id="mission-card" class="canva-card rounded-2xl p-5" style="background: rgb(255, 255, 255);">
+        <div class="mb-3 text-[#1877b8]"><i data-lucide="compass" width="24" height="24"></i>
+        </div>
+        <h3 data-template-id="mission-title" class="canva-text mb-2 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Misi</h3>
+        <ul class="mission-list space-y-3 text-sm leading-relaxed">
+         <li data-template-id="mission-point-1" class="canva-text" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Meningkatkan pendidikan keagamaan pada proses pembelajaran</li>
+         <li data-template-id="mission-point-2" class="canva-text" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Membina peserta didik untuk meningkatkan kualitas mental dan kedisiplinan secara berkelanjutan</li>
+         <li data-template-id="mission-point-3" class="canva-text" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Mempersiapkan generasi muda yang beriman, berilmu, dan berakhlak mulia yang dapat mengamalkan iman dan ilmunya untuk kepentingan agama, bangsa, dan negara</li>
+        </ul>
+       </article>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="program" data-template-id="program-section" class="canva-section w-full py-20" style="background: rgb(231, 244, 251);">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+     <div class="mx-auto mb-11 max-w-2xl text-center">
+      <p data-template-id="program-kicker" class="canva-text mb-3 text-sm font-bold uppercase tracking-[0.16em]" style="color: rgb(24, 119, 184); font-weight: 700; font-style: normal; font-size: 16px;">Program Unggulan</p>
+      <h2 data-template-id="program-title" class="canva-text school-heading mb-4 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 24px;">Belajar lebih luas dari ruang kelas</h2>
+      <p data-template-id="program-description" class="canva-text leading-relaxed" style="color: rgb(76, 98, 113); font-weight: 400; font-style: normal; font-size: 16px;">Program yang dirancang untuk menyeimbangkan pencapaian akademik, kreativitas, dan karakter.</p>
+     </div>
+     <div class="grid gap-6 md:grid-cols-3">
+      <article data-template-id="program-card-1" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="program-image-tko" loading="lazy" class="canva-image h-48 w-full object-cover" src="canva://MAGZQ7C41jQ/1" alt="A classic orange car displayed in a minimalist indoor showroom with modern lighting.">
+       <div class="p-7">
+        <div class="mb-6 inline-flex rounded-2xl bg-[#dceff9] p-4 text-[#1877b8]"><i data-lucide="book-open-check" width="28" height="28"></i>
+        </div>
+        <h3 data-template-id="program-1-title" class="canva-text mb-3 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Teknik Kendaraan Otomotif</h3>
+        <p data-template-id="program-1-text" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Siswa belajar memecahkan persoalan nyata melalui kolaborasi dan presentasi karya.</p>
+       </div>
+      </article>
+      <article data-template-id="program-card-2" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="program-image-tkj" loading="lazy" class="canva-image h-48 w-full object-cover" src="canva://MADQ5l0NmW8/1" alt="A modern laptop and mouse on a clean, white surface, with a minimalist aesthetic.">
+       <div class="p-7">
+        <div class="mb-6 inline-flex rounded-2xl bg-[#fff0c8] p-4 text-[#b97700]"><i data-lucide="flask-conical" width="28" height="28"></i>
+        </div>
+        <h3 data-template-id="program-2-title" class="canva-text mb-3 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Teknik Komputer dan Jaringan </h3>
+        <p data-template-id="program-2-text" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Eksplorasi sains, riset sederhana, dan literasi digital untuk masa depan.</p>
+       </div>
+      </article>
+      <article data-template-id="program-card-3" class="canva-card lift-card rounded-3xl p-7 shadow-sm" style="background: rgb(255, 255, 255);">
+       <div class="mb-6 inline-flex rounded-2xl bg-[#dff4e6] p-4 text-[#23784b]"><i data-lucide="heart-handshake" width="28" height="28"></i>
+       </div>
+       <h3 data-template-id="program-3-title" class="canva-text mb-3 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Karakter &amp; Kepemimpinan</h3>
+       <p data-template-id="program-3-text" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Kegiatan organisasi, sosial, dan olahraga untuk menumbuhkan kepemimpinan.</p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="fasilitas" class="w-full bg-white py-20">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+     <div class="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+      <div class="max-w-xl">
+       <p data-template-id="facility-kicker" class="canva-text mb-3 text-sm font-bold uppercase tracking-[0.16em]" style="color: rgb(24, 119, 184); font-weight: 700; font-style: normal; font-size: 16px;">Fasilitas</p>
+       <h2 data-template-id="facility-title" class="canva-text school-heading font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 24px;">Ruang yang mendukung setiap potensi</h2>
+      </div>
+      <p data-template-id="facility-description" class="canva-text max-w-md leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Fasilitas yang dirawat untuk membuat proses belajar semakin nyaman, aktif, dan menyenangkan.</p>
+     </div>
+     <div class="grid gap-6 md:grid-cols-3">
+      <article data-template-id="facility-card-1" class="canva-card lift-card overflow-hidden rounded-3xl border border-slate-100 shadow-sm" style="background: rgb(255, 255, 255);">
+       <img data-template-id="facility-image-1" loading="lazy" class="canva-image h-56 w-full object-cover" src="https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A cozy library space in Stockholm with brown leather chairs and wooden bookshelves filled with books.">
+       <div class="p-6">
+        <h3 data-template-id="facility-1-title" class="canva-text mb-2 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Perpustakaan</h3>
+        <p data-template-id="facility-1-text" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Koleksi bacaan dan ruang nyaman untuk bertumbuh bersama buku.</p>
+       </div>
+      </article>
+      <article data-template-id="facility-card-2" class="canva-card lift-card overflow-hidden rounded-3xl border border-slate-100 shadow-sm" style="background: rgb(255, 255, 255);">
+       <img data-template-id="facility-image-2" loading="lazy" class="canva-image h-56 w-full object-cover" src="canva://MAHVeEQns5s/1" alt="Scientist in gloves analyzing blue liquid in a laboratory setting with microscope and glassware.">
+       <div class="p-6">
+        <h3 data-template-id="facility-2-title" class="canva-text mb-2 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Ruang Praktek TKR
+</h3>
+        <p data-template-id="facility-2-text" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Tempat siswa mengamati, mencoba, dan membuktikan ide ilmiah.</p>
+       </div>
+      </article>
+      <article data-template-id="facility-card-3" class="canva-card lift-card overflow-hidden rounded-3xl border border-slate-100 shadow-sm" style="background: rgb(255, 255, 255);">
+       <img data-template-id="facility-image-3" loading="lazy" class="canva-image h-56 w-full object-cover" src="https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Dynamic shot of a soccer player's foot on a vivid orange ball on a lush green field.">
+       <div class="p-6">
+        <h3 data-template-id="facility-3-title" class="canva-text mb-2 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Lapangan Olahraga</h3>
+        <p data-template-id="facility-3-text" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Area aktif untuk membangun semangat sportivitas dan kebersamaan.</p>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="guru" data-template-id="teacher-section" class="canva-section w-full py-20" style="background: rgb(231, 244, 251);">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+     <div class="mx-auto mb-11 max-w-2xl text-center">
+      <p data-template-id="teacher-kicker" class="canva-text mb-3 text-sm font-bold uppercase tracking-[0.16em]" style="color: rgb(24, 119, 184); font-weight: 700; font-style: normal; font-size: 16px;">Tim Pengajar</p>
+      <h2 data-template-id="teacher-title" class="canva-text school-heading mb-4 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 24px;">Guru yang mendampingi perjalanan belajar</h2>
+      <p data-template-id="teacher-description" class="canva-text leading-relaxed" style="color: rgb(76, 98, 113); font-weight: 400; font-style: normal; font-size: 16px;">Kenali para pendidik yang hadir dengan keahlian, kepedulian, dan semangat untuk membantu siswa berkembang.</p>
+     </div>
+     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <article data-template-id="teacher-card-1" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="teacher-image-1" loading="lazy" class="canva-image h-64 w-full object-cover" src="canva://MAHVeHcryKo/1" alt="An Indonesian teacher in traditional attire, smiling at his desk with documents in an office setting.">
+       <div class="p-5">
+        <h3 data-template-id="teacher-1-name" class="canva-text mb-1 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Subani, S.Pd.</h3>
+        <p data-template-id="teacher-1-role" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Kepala Sekolah</p>
+       </div>
+      </article>
+      <article data-template-id="teacher-card-2" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="teacher-image-2" loading="lazy" class="canva-image h-64 w-full object-cover" src="canva://MAHVeBLXCSw/1" alt="A confident Muslim teacher in a classroom holding a tablet, standing by a whiteboard with math equations.">
+       <div class="p-5">
+        <h3 data-template-id="teacher-2-name" class="canva-text mb-1 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Ibu Siti Rahma</h3>
+        <p data-template-id="teacher-2-role" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Guru Matematika</p>
+       </div>
+      </article>
+      <article data-template-id="teacher-card-3" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="teacher-image-3" loading="lazy" class="canva-image h-64 w-full object-cover" src="canva://MAHVgQV85iw/1" alt="Male teacher standing thoughtfully in front of chalkboard filled with mathematical equations.">
+       <div class="p-5">
+        <h3 data-template-id="teacher-3-name" class="canva-text mb-1 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Kris Gunarsih, A.Md</h3>
+        <p data-template-id="teacher-3-role" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Guru Matematika, Kimia, Fisika</p>
+       </div>
+      </article>
+      <article data-template-id="teacher-card-4" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="teacher-image-4" loading="lazy" class="canva-image h-64 w-full object-cover" src="canva://MAHVgSSxrxc/1" alt="A friendly female teacher smiles in front of a classroom whiteboard.">
+       <div class="p-5">
+        <h3 data-template-id="teacher-4-name" class="canva-text mb-1 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Lilis Sumarni, S.Pd.</h3>
+        <p data-template-id="teacher-4-role" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Guru Bahasa Indonesia</p>
+       </div>
+      </article>
+      <article data-template-id="teacher-card-5" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="teacher-image-5" loading="lazy" class="canva-image h-64 w-full object-cover" src="canva://MAHVgWhsD-A/1" alt="Smiling male professor stands confidently in front of a chalkboard filled with mathematical equations.">
+       <div class="p-5">
+        <h3 data-template-id="teacher-5-name" class="canva-text mb-1 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Nursiah, SE</h3>
+        <p data-template-id="teacher-5-role" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Tenaga Administrasi Sekolah</p>
+       </div>
+      </article>
+      <article data-template-id="teacher-card-6" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="teacher-image-6" loading="lazy" class="canva-image h-64 w-full object-cover" src="https://images.pexels.com/photos/734168/pexels-photo-734168.jpeg" alt="Smiling young woman stands confidently by a blackboard with chalk drawings.">
+       <div class="p-5">
+        <h3 data-template-id="teacher-6-name" class="canva-text mb-1 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Ibu Rina Lestari</h3>
+        <p data-template-id="teacher-6-role" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Guru Bahasa Inggris</p>
+       </div>
+      </article>
+      <article data-template-id="teacher-card-7" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="teacher-image-7" loading="lazy" class="canva-image h-64 w-full object-cover" src="https://images.pexels.com/photos/5415445/pexels-photo-5415445.jpeg" alt="A teacher standing in an office in Indonesia, holding a book, conveying education.">
+       <div class="p-5">
+        <h3 data-template-id="teacher-7-name" class="canva-text mb-1 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Bapak Dedi Saputra</h3>
+        <p data-template-id="teacher-7-role" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Guru Produktif TKR</p>
+       </div>
+      </article>
+      <article data-template-id="teacher-card-8" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="teacher-image-8" loading="lazy" class="canva-image h-64 w-full object-cover" src="https://images.pexels.com/photos/6937753/pexels-photo-6937753.jpeg" alt="A confident Muslim teacher in a classroom holding a tablet, standing by a whiteboard with math equations.">
+       <div class="p-5">
+        <h3 data-template-id="teacher-8-name" class="canva-text mb-1 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Ibu Nur Aisyah</h3>
+        <p data-template-id="teacher-8-role" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Guru Pendidikan Agama</p>
+       </div>
+      </article>
+      <article data-template-id="teacher-card-9" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="teacher-image-9" loading="lazy" class="canva-image h-64 w-full object-cover" src="https://images.pexels.com/photos/7983621/pexels-photo-7983621.jpeg" alt="Confident young man with glasses smiling in a library, evoking a professional and approachable vibe.">
+       <div class="p-5">
+        <h3 data-template-id="teacher-9-name" class="canva-text mb-1 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Bapak Fajar Hidayat</h3>
+        <p data-template-id="teacher-9-role" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Guru Informatika</p>
+       </div>
+      </article>
+      <article data-template-id="teacher-card-10" class="canva-card lift-card overflow-hidden rounded-3xl shadow-sm" style="background: rgb(255, 255, 255);"><img data-template-id="teacher-image-10" loading="lazy" class="canva-image h-64 w-full object-cover" src="https://images.pexels.com/photos/8423069/pexels-photo-8423069.jpeg" alt="A smiling teacher stands in a classroom holding notes, embodying education and professionalism.">
+       <div class="p-5">
+        <h3 data-template-id="teacher-10-name" class="canva-text mb-1 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Ibu Maya Sari</h3>
+        <p data-template-id="teacher-10-role" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Guru Seni Budaya</p>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section data-template-id="news-section" class="canva-section w-full py-20" style="background: rgb(247, 243, 233);">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+     <div class="mb-10 text-center">
+      <p data-template-id="news-kicker" class="canva-text mb-3 text-sm font-bold uppercase tracking-[0.16em]" style="color: rgb(24, 119, 184); font-weight: 700; font-style: normal; font-size: 16px;">Kabar Sekolah</p>
+      <h2 data-template-id="news-title" class="canva-text school-heading font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 24px;">Cerita terbaru dari Cendekia</h2>
+     </div>
+     <div class="grid gap-5 md:grid-cols-3">
+      <article data-template-id="news-card-1" class="canva-card rounded-2xl p-6" style="background: rgb(255, 255, 255);">
+       <p data-template-id="news-1-date" class="canva-text mb-4 text-xs font-bold uppercase tracking-wider" style="color: rgb(24, 119, 184); font-weight: 700; font-style: normal; font-size: 16px;">12 September 2026</p>
+       <h3 data-template-id="news-1-title" class="canva-text mb-3 font-bold leading-snug" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Tim Sains Raih Penghargaan Inovasi Pelajar</h3>
+       <p data-template-id="news-1-text" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Proyek pengolahan air sederhana karya siswa mendapat apresiasi tingkat kota.</p>
+      </article>
+      <article data-template-id="news-card-2" class="canva-card rounded-2xl p-6" style="background: rgb(255, 255, 255);">
+       <p data-template-id="news-2-date" class="canva-text mb-4 text-xs font-bold uppercase tracking-wider" style="color: rgb(24, 119, 184); font-weight: 700; font-style: normal; font-size: 16px;">03 September 2026</p>
+       <h3 data-template-id="news-2-title" class="canva-text mb-3 font-bold leading-snug" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Pekan Literasi Hadir dengan Beragam Kegiatan</h3>
+       <p data-template-id="news-2-text" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Mulai dari bincang buku hingga panggung cerita, seluruh siswa ikut merayakan literasi.</p>
+      </article>
+      <article data-template-id="news-card-3" class="canva-card rounded-2xl p-6" style="background: rgb(255, 255, 255);">
+       <p data-template-id="news-3-date" class="canva-text mb-4 text-xs font-bold uppercase tracking-wider" style="color: rgb(24, 119, 184); font-weight: 700; font-style: normal; font-size: 16px;">25 Agustus 2026</p>
+       <h3 data-template-id="news-3-title" class="canva-text mb-3 font-bold leading-snug" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Penerimaan Peserta Didik Baru Dibuka</h3>
+       <p data-template-id="news-3-text" class="canva-text text-sm leading-relaxed" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Informasi jadwal, persyaratan, dan rangkaian pendaftaran tersedia melalui sekolah.</p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="kontak" data-template-id="contact-section" class="canva-section w-full py-20" style="background: rgb(18, 48, 71);">
+    <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.85fr_1.15fr] lg:px-8">
+     <div>
+      <p data-template-id="contact-kicker" class="canva-text mb-3 text-sm font-bold uppercase tracking-[0.16em]" style="color: rgb(243, 189, 77); font-weight: 700; font-style: normal; font-size: 16px;">Hubungi Kami</p>
+      <h2 data-template-id="contact-title" class="canva-text school-heading mb-5 font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Mari mulai percakapan</h2>
+      <p data-template-id="contact-description" class="canva-text mb-8 leading-relaxed" style="color: rgb(215, 232, 241); font-weight: 400; font-style: normal; font-size: 16px;">Punya pertanyaan tentang sekolah, program, atau pendaftaran? Kirimkan pesan Anda kepada kami.</p>
+      <div class="space-y-5">
+       <div class="flex gap-4">
+        <div class="mt-1 text-[#1877b8]"><i data-lucide="map-pin" width="21" height="21"></i>
+        </div>
+        <div>
+         <h3 data-template-id="address-label" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Alamat</h3>
+         <p data-template-id="address-text" class="canva-text mt-1 text-sm leading-relaxed" style="color: rgb(215, 232, 241); font-weight: 400; font-style: normal; font-size: 16px;">Jl. Prajurit Kiemas Ali Kel. 2 Ilir Kec. IT. II Palembang</p>
+        </div>
+       </div>
+       <div class="flex gap-4">
+        <div class="mt-1 text-[#1877b8]"><i data-lucide="mail" width="21" height="21"></i>
+        </div>
+        <div>
+         <h3 data-template-id="email-label" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Email</h3>
+         <p data-template-id="email-text" class="canva-text mt-1 text-sm" style="color: rgb(215, 232, 241); font-weight: 400; font-style: normal; font-size: 16px;">tamsissb@gmail.com</p>
+        </div>
+       </div>
+       <div class="flex gap-4">
+        <div class="mt-1 text-[#1877b8]"><i data-lucide="message-circle" width="21" height="21"></i>
+        </div>
+        <div>
+         <h3 data-template-id="whatsapp-label" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">WhatsApp</h3>
+         <p data-template-id="whatsapp-text" class="canva-text mt-1 text-sm" style="color: rgb(215, 232, 241); font-weight: 400; font-style: normal; font-size: 16px;">088274183176</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <form id="contact-form" data-template-id="contact-form-panel" class="canva-panel rounded-3xl p-6 shadow-lg sm:p-8" novalidate="" style="background: rgb(255, 255, 255);">
+      <h3 data-template-id="form-title" class="canva-text mb-2 font-bold" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 19px;">Kirim pesan</h3>
+      <p data-template-id="form-description" class="canva-text mb-6 text-sm" style="color: rgb(96, 112, 128); font-weight: 400; font-style: normal; font-size: 16px;">Tim sekolah akan menerima pesan Anda melalui formulir ini.</p>
+      <div class="space-y-5">
+       <div>
+        <label data-template-id="name-label" class="canva-text mb-2 block text-sm font-bold" for="nama" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 16px;">Nama lengkap</label> <input id="nama" name="nama" required="" type="text" class="focus-ring w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-800" autocomplete="name">
+       </div>
+       <div>
+        <label data-template-id="email-input-label" class="canva-text mb-2 block text-sm font-bold" for="email" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 16px;">Alamat email</label> <input id="email" name="email" required="" type="email" class="focus-ring w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-800" autocomplete="email">
+       </div>
+       <div>
+        <label data-template-id="message-label" class="canva-text mb-2 block text-sm font-bold" for="pesan" style="color: rgb(18, 48, 71); font-weight: 700; font-style: normal; font-size: 16px;">Pesan Anda</label> <textarea id="pesan" name="pesan" required="" rows="5" class="focus-ring w-full resize-y rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-800"></textarea>
+       </div><button id="submit-button" data-template-id="submit-button" type="submit" class="canva-button focus-ring inline-flex w-full items-center justify-center gap-2 rounded-xl px-5 py-3.5 font-bold" style="background: rgb(24, 119, 184); color: rgb(255, 255, 255);"> <i data-lucide="send" width="18" height="18"></i><span data-template-id="submit-button-text" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Kirim Pesan</span> </button>
+       <p id="form-status" class="hidden rounded-xl px-4 py-3 text-sm font-semibold" aria-live="polite"></p>
+      </div>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer data-template-id="site-footer" class="canva-footer w-full py-8" style="background: rgb(11, 34, 51);">
+   <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 px-5 text-sm md:flex-row lg:px-8">
+    <p data-template-id="footer-name" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">SMK Tamansiswa Sungai Buah Palembang</p>
+    <p data-template-id="footer-text" class="canva-text" style="color: rgb(183, 206, 218); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 — Belajar, bertumbuh, dan berdampak.</p>
+   </div>
+  </footer>
+  <script>
+    const form = document.getElementById("contact-form");
+    const submitButton = document.getElementById("submit-button");
+    const statusBox = document.getElementById("form-status");
+    let sdkReady = false;
+
+    function showStatus(message, type) {
+      statusBox.textContent = message;
+      statusBox.className = "rounded-xl px-4 py-3 text-sm font-semibold";
+      statusBox.classList.add(type === "success" ? "bg-emerald-100" : "bg-red-100");
+      statusBox.classList.add(type === "success" ? "text-emerald-800" : "text-red-800");
+    }
+
+    async function initializeSheet() {
+      try {
+        const result = await window.dataSdk.init({
+          onDataChanged() {}
+        });
+        sdkReady = result.isOk;
+        if (!result.isOk) showStatus("Formulir belum siap. Silakan coba lagi beberapa saat.", "error");
+      } catch {
+        sdkReady = false;
+        showStatus("Formulir belum dapat terhubung. Silakan muat ulang halaman.", "error");
+      }
+    }
+
+    form.addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      if (!sdkReady) {
+        showStatus("Formulir belum siap. Silakan coba lagi beberapa saat.", "error");
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.classList.add("opacity-70", "cursor-not-allowed");
+
+      try {
+        const result = await window.dataSdk.create({
+          nama: document.getElementById("nama").value.trim(),
+          email: document.getElementById("email").value.trim(),
+          pesan: document.getElementById("pesan").value.trim(),
+          tanggal: new Date().toISOString()
+        });
+
+        if (!result.isOk) {
+          showStatus("Pesan belum dapat dikonfirmasi. Silakan coba lagi nanti.", "error");
+          return;
+        }
+
+        form.reset();
+        showStatus("Terima kasih. Pesan Anda telah berhasil dikirim ke sekolah.", "success");
+      } catch {
+        showStatus("Terjadi kendala saat mengirim pesan. Silakan coba lagi.", "error");
+      } finally {
+        submitButton.disabled = false;
+        submitButton.classList.remove("opacity-70", "cursor-not-allowed");
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+      initializeSheet();
+    });
+  </script>
+ 
+</body></html>
